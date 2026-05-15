@@ -80,6 +80,7 @@ if (ismember(strategies, INROWDETSTR.AUTOMATIC))
     end
     xlabel("timestamp [s]")
     ax(f-1).YTick = [-1 0 1 2];
-    ax(f-1).YTickLabel = {'no_chunk','not fitted','fitted','discarded'};    title("state ")
+    ax(f-1).YTickLabel = {'no_chunk','not fitted','fitted','discarded'};
+    title("state ")
     legend show
 end
