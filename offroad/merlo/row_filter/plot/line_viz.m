@@ -165,7 +165,7 @@ function drawCurrentSample()
     dyr  = S.bag1.measures.coeff(i,:,5);
 
     nR = numel(rhor);
-    dataRows = cell(nR, 8);
+    dataRows = cell(nR, 9);
     for k = 1:nR
         dataRows{k,1} = k;
         dataRows{k,2} = p1r(k);
