@@ -45,15 +45,6 @@ Typical flow:
 
 The script loads the log, parses row-filter/vehicle topics, and generates multiple analysis plots (state, chunks, line equations, distances, map, and angle estimates).
 
-## Expected log fields
-The loaded `.mat` structure is expected to contain row-filter and vehicle-state topics, including:
-- `perception__row_filter__line_equations`
-- `perception__row_filter__debug__equation_meas`
-- `localization__vehicle_state`
-
-Optional:
-- `supervisor__vehicle_status` (used for additional in-row status overlays when available).
-
 ## Notes
 - `merlo/bags/` is intentionally empty in the repository (`.gitkeep` only). Add your own logs locally.
 - `RowFilterAnalysis.m` uses `currentProject`, so running it from an open MATLAB project is the supported workflow.
