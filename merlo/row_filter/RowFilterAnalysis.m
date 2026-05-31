@@ -13,9 +13,9 @@ line_form   = 'normal';
 
 proj = currentProject;
 DATA_DIR = fullfile(proj.RootFolder, 'merlo', 'bags');
-
-addpath("func/");
-addpath("plot/");
+scriptDir = fileparts(mfilename('fullpath'));
+addpath(fullfile(scriptDir,'func'));
+addpath(fullfile(scriptDir,'plot'));
 
 LoadStruct; 
 PhysicalConstants;
